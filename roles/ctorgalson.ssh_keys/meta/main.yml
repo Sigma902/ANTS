@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Christopher Torgalson
+  description: An Ansible role to manage ssh keys for Ubuntu & macOS users.
+  company: Bedlam Hotel
+
+  role_name: ssh_keys
+
+  license: GPLv3
+
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - keys
+    - ssh
+    - system
+    - users
+
+dependencies: []

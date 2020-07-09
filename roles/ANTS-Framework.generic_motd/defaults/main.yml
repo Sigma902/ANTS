@@ -2,5 +2,5 @@
     
     generic_motd__template: 'motd.j2'
     generic_motd__support_name: 'HelpHub'
-    generic_motd__support_tel: '(847) 700-5800'
+    generic_motd__support_tel: '(847) 700-5800 or (800) 255-5801'
     generic_motd__support_mail: 'noreply@united.com'

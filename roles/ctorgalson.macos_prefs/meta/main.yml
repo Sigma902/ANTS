@@ -1,0 +1,24 @@
+---
+galaxy_info:
+  author: Christopher Torgalson
+  description: An Ansible role to set initial values for macOS app preferences.
+  company: Bedlam Hotel
+
+  role_name: macos_prefs
+
+  license: "GPL-3.0-or-later"
+
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: MacOSX
+      versions:
+        - all
+        - any
+
+  galaxy_tags:
+    - macos
+    - osx
+    - preferences
+
+dependencies: []

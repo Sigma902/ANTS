@@ -1,0 +1,33 @@
+---
+galaxy_info:
+  author: Andrew Rothstein
+  description: installs a CA certificate and trusts it
+  company: BlackRock
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: MacOSX
+      versions:
+        - all
+    - name: Alpine
+      versions:
+        - all
+    - name: Archlinux
+      versions:
+        - all
+  galaxy_tags:
+    - tls
+    - ssl
+    - certificate
+    - pki
+dependencies: []

@@ -1,0 +1,26 @@
+---
+- name: Ensure that the {{ appzapper_package }} package is installed
+  tags: appzapper
+  homebrew_cask:
+    name: "{{ appzapper_package|lower }}"
+    state: present
+  when: appzapper_package|length > 0
+
+- name: Attempting to apply {{ appzapper_package }} configurations
+  tags: appzapper
+  osx_defaults:
+    domain: "{{ appzapper_domain }}"
+    key: "{{ item.name }}"
+    state: "{{ item.state|default('present') }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  loop: "{{ appzapper_defaults }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when:
+    - item.name is defined
+    - item.type is defined
+    - item.value is defined
+    - appzapper_defaults|length > 0
+    - appzapper_domain is defined
+...
